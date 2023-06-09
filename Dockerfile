@@ -3,6 +3,7 @@ FROM azul/zulu-openjdk:17 as build
 WORKDIR /home/gradle/project
 
 COPY . .
+COPY build.gradle /home/gradle/project/build.gradle
 
 RUN chmod +x ./gradlew
 
