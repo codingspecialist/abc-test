@@ -1,4 +1,4 @@
-FROM gradle:7.3.1-jdk17 as build
+FROM azul/zulu-openjdk:17 as build
 
 WORKDIR /home/gradle/project
 
